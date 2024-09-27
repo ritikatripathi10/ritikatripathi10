@@ -1,7 +1,5 @@
 - 👋 Hi, I’m @ritikatripathi10
-- 👀 I’m interested in
-  graphical designing
-  travelling 
+- 👀 I’m interested in graphical designing,travelling 
 - 🌱 I’m currently learning AIML engineering 
 - 💞️ I’m looking to collaborate on projects
 - 📫 How to reach me ritikatripathi0310@gmail.com
