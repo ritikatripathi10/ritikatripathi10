@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+   <html>
+   <head>
+       <title>Hello Flask</title>
+       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+       <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+   </head>
+   <body>
+       <h1>Hello, World!</h1>
+       <p>Welcome to Flask with HTML, CSS, and JavaScript!</p>
+       <button onclick="displayMessage()">Click Me</button>
+       <p id="message"></p>
+   </body>
+   </html>
