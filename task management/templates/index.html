@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management System</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    {% extends 'base.html' %}
+
+{% block title %}Homepage | Task Manager{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Welcome to the Task Management System</h1>
+<p class="text-center">This is a simple task manager to help you organize your tasks.</p>
+
+<!-- Add Task and Delete Task Buttons -->
+<div class="text-center mt-4">
+    <a href="/add-task" class="btn btn-primary btn-lg mx-2">Add Task</a>
+    <a href="/delete-task" class="btn btn-danger btn-lg mx-2">Delete Task</a>
+</div>
+
+<!-- Task List in Card Format with Animation -->
+<div class="row mt-5">
+    {% if tasks %}
+        {% for task in tasks %}
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">{{ task }}</h5>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    {% else %}
+    <div class="col-12">
+        <p class="text-center">No tasks added yet.</p>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
+</body>
+</html>
