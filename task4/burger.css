@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(231, 22, 15);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+
+.container{
+    border: 4px solid white;
+    border-radius: 20px;
+    background: linear-gradient(rgba(255, 255, 255, 0.566), rgb(241, 30, 11));
+    width: 300px;
+    text-align: center;
+    justify-content: center;
+    height: 680px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+h1{
+    color: white;
+    font-family:cursive;
+}
+
+.burger, .burger-1{
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    left: -17px;
+    bottom: -12px;
+
+}
+.burger-1{
+    left: 60px;
+    height: 200px;
+    width: 160px;
+    bottom: -28px;
+
+}
